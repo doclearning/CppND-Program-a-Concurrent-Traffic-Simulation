@@ -37,14 +37,13 @@ private:
 // can be either „red“ or „green“. Also, add the private method „void cycleThroughPhases()“. 
 // Furthermore, there shall be the private member _currentPhase which can take „red“ or „green“ as its value. 
 
-enum TrafficLightPhase {red, green}; //JAQ_QUERY: could this be an class enum? Probably not if it's a public getter
+enum TrafficLightPhase {red, green};
 
 class TrafficLight : public TrafficObject
 {
 public:
     // constructor / desctructor
     TrafficLight();
-    //JAQ_TODO: probably define a destructor to clean up threads?
 
     // getters / setters
     TrafficLightPhase getCurrentPhase();

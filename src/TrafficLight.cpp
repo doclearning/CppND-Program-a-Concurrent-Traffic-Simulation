@@ -64,7 +64,6 @@ void TrafficLight::toggleCurrentPhase(){
     _currentPhase == TrafficLightPhase::green ? _currentPhase = TrafficLightPhase::red : _currentPhase = TrafficLightPhase::green;
 }
 
-//JAQ_ISSUE: Pretty sure this is currently not actually executed
 void TrafficLight::simulate()
 {
     // FP.2b : Finally, the private method „cycleThroughPhases“ should be started in a thread when the public method „simulate“ is called. To do this, use the thread queue in the base class. 
